@@ -43,7 +43,7 @@
 ```
 DB_HOST="localhost" (Si no estas usando una base de datos local agrega la URL del Host donde se encuentra alojada)
 DB_USER="root" (Reemplaza por tu usuario de MySQL)
-DB_PASS="" (Agrega tu pasword de MySQL)
+DB_PASS="" (Agrega tu password de MySQL)
 DB_NAME="Trailerflix" 
 PORT=3000 
 ```
