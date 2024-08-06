@@ -12,17 +12,36 @@
 <body>
   <div class="App">
     <h2>Catalogo</h2>
-    
     <nav>
-      <a href="index.html">Catalogo</a>
-      <a href="search-id.html">Buscar por Id</a>
-      <a href="search-titulo.html">Buscar por Título</a>
-      <a href="search-category.html">Buscar por Categoría</a>
-      <a href="search-genero.html">Buscar por Género</a>
-      <a href="search-actor.html">Buscar por Actor</a>   
-      <a href="search-avanzada.html">Busqueda avanzada</a>
+      <a onclick="showSearchOptions('catalogo'); limpiarRender()">Catalogo</a>
+      <a onclick="showSearchOptions('id'); limpiarRender()">Buscar por Id</a>
+      <a onclick="showSearchOptions('titulo'); limpiarRender()">Buscar por título</a>
+      <a onclick="showSearchOptions('categoria'); limpiarRender()">Buscar por categoría</a>
+      <a onclick="showSearchOptions('genero'); limpiarRender()">Buscar por género</a>
+      <a onclick="showSearchOptions('actor'); limpiarRender()">Buscar por actor/actriz</a>
+      <a onclick="showSearchOptions('multiple'); limpiarRender()">Búsqueda avanzada</a>
     </nav>
+    
+    <div style="display:flex; justify-content: center;">
+      <form id="search-form" style="display:flex; justify-content: center;">
+        <div id="multiple-criteria" style="display: inline-flex; justify-content: center;"  class="criteriosForm">
+          <input type="text" id="id" placeholder="Id" class="opcionInput" style="display: none;">
+          <input type="text" id="titulo" placeholder="Título" class="opcionInput" style="display: none;">
+          <input type="text" id="categoria" placeholder="Categoría" class="opcionInput" style="display: none;">
+          <input type="text" id="genero" placeholder="Género" class="opcionInput" style="display: none;">
+          <input type="text" id="resumen" placeholder="Resumen" class="opcionInput" style="display: none;">
+          <input type="text" id="temporadas" placeholder="Temporadas" class="opcionInput" style="display: none;">
+          <input type="text" id="tag" placeholder="Tag" class="opcionInput" style="display: none;">
+          <input type="text" id="actor" placeholder="Actor/actriz" class="opcionInput" style="display: none;">
+          <input type="text" id="tipoBusqueda" style="display: none;">
+          <button id = "botonBuscar"  class="opcionInput" style="display: none;">Buscar</button>
+      </div>
+
+    </form>
+  </div>
+  <div id="search-results"></div>
     <div id="items-container" class="items-container"></div>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>

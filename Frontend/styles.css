@@ -33,18 +33,15 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: darkorange;
+  cursor: pointer;
 }
 
 form {
   margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-form div{
   width: 75%;
+
 }
 
 form input {
@@ -52,7 +49,6 @@ form input {
   width: 240px;
   height: 36px;
   margin-right: 10px;
-  margin-bottom: 10px;
 
 }
 
@@ -173,7 +169,6 @@ input[type="text"] {
   border: none;
   width: 248px;
   height: 36px;
-  margin-right: 10px;
 }
 select {
   padding: 10px;
@@ -199,17 +194,17 @@ button:hover {
   background-color: #444;
 }
 
-/* .criteriosForm{
+.criteriosForm{
 display: flex;
 justify-content: left  ;
 align-items: center;
 margin-right: 10px;
 flex-wrap: wrap;
 display: flex;
-} */
+}
 
-/* .opcionInput {
+.opcionInput {
   display: none;
   margin-top: 10px;
   margin-bottom: 10px;
-} */
+}
