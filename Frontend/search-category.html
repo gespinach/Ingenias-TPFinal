@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trailerflix - Buscar por Categoría</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+ <!-- Banner -->
+ <header class="banner">
+    <h1>Trailerflix</h1>
+  </header>
+<body>
+ 
+
+  <!-- Main Content -->
+  <div class="App">
+    
+    <h2>Buscar por Categoría</h2>
+    <nav>
+        <a href="index.html">Catalogo</a>
+      <a href="search-id.html">Buscar por Id</a>
+      <a href="search-titulo.html">Buscar por Título</a>
+      <a href="search-category.html">Buscar por Categoría</a>
+      <a href="search-genero.html">Buscar por Género</a>
+      <a href="search-actor.html">Buscar por Actor</a>   
+      <a href="search-avanzada.html">Busqueda avanzada</a>
+      </nav>
+    <form id="search-form">
+      <div >
+      <input type="text" id="category-name" placeholder="Nombre de la categoría" required>
+      <button type="submit">Buscar</button>
+    </div>
+    </form>
+    <div id="items-container"class="items-container"></div>
+</div>
+
+  <script src="search-category.js"></script>
+</body>
+</html>
